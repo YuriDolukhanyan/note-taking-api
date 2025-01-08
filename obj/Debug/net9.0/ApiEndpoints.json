@@ -1,0 +1,101 @@
+[
+  {
+    "ContainingType": "note_taking_api.Controllers.NoteItemController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/NoteItem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[note_taking_api.Models.NoteItem, note_taking_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "note_taking_api.Controllers.NoteItemController",
+    "Method": "AddAsync",
+    "RelativePath": "api/NoteItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createNoteItemDto",
+        "Type": "note_taking_api.Models.CreateNoteItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "note_taking_api.Controllers.NoteItemController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/NoteItem/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "note_taking_api.Models.NoteItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "note_taking_api.Controllers.NoteItemController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/NoteItem/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "noteItem",
+        "Type": "note_taking_api.Models.UpdateNoteItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "note_taking_api.Controllers.NoteItemController",
+    "Method": "DeleteAsync",
+    "RelativePath": "api/NoteItem/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
