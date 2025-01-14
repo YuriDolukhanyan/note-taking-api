@@ -82,7 +82,6 @@ namespace note_taking_api.Controllers
             }
         }
 
-
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
